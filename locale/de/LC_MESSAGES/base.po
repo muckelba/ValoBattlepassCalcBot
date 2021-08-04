@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-08-04 17:33+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: German <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: .\bot.py:86
+msgid "Usage: `?battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`"
+msgstr "Verwendung: `?battlepass [Aktuelles Level] [Aktuelle XP] [Ziellevel] [Ohne Weeklies]`"
+
+#: .\bot.py:90
+msgid ":x: Please enter your current level correctly"
+msgstr ":x: Bitte gib dein aktuelles Level richtig an"
+
+#: .\bot.py:95
+msgid ":x: Your entered level is not between 1 and 55"
+msgstr ":x: Dein angegebenes Level ist nicht zwischen 1 und 55"
+
+#: .\bot.py:102
+msgid ":x: Please enter your current XP correctly"
+msgstr ":x: Bitte gib deine aktuellen XP richtig an"
+
+#: .\bot.py:107
+msgid ":x: Your entered XP is not between 0 and 38,000"
+msgstr ":x: Deine angegebenen XP sind nicht zwischen 0 und 38.000"
+
+#: .\bot.py:114
+msgid ":x: Please enter your wanted level correctly"
+msgstr ":x: Bitte gib deine Ziellevel richtig an"
+
+#: .\bot.py:119
+msgid ":x: Your entered wanted level is not between 1 and 55"
+msgstr ":x: Dein angegebenes Ziellevel ist nicht zwischen 1 und 55"
+
+#: .\bot.py:124
+msgid "Average daily XP needed"
+msgstr "Durchschnittlich benötigte XP pro Tag"
+
+#: .\bot.py:124
+msgid "Average weekly XP needed"
+msgstr "Durchschnittlich benötigte XP pro Woche"
+
+#: .\bot.py:123
+msgid "Needed Normal/Ranked Games"
+msgstr "Benötigte Normal/Ranked Games"
+
+#: .\bot.py:123
+msgid "Needed Spikerushes"
+msgstr "Benötigte Spikerushes"
+
+#: .\bot.py:123
+msgid "Needed XP for level"
+msgstr "Benötigte XP für level"
+
+#: .\bot.py:123
+msgid "Needed XP for level up"
+msgstr "Benötigte XP für's level up"
+
+#: .\bot.py:123
+msgid "Total XP"
+msgstr "Gesamt XP"
+
+#: .\bot.py:132
+msgid "Battlepass Calculator"
+msgstr "Battlepass Rechner"
+
+#: .\bot.py:135
+msgid "With completed weeklies"
+msgstr "Mit abgeschlossenen Weeklies"
+
+#: .\bot.py:142
+msgid "Bot is ready"
+msgstr "Bot ist bereit"
+

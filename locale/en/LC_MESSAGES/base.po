@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-08-04 19:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: .\bot.py:86
+msgid "Usage: `?battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`"
+msgstr "Usage: `?battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`"
+
+#: .\bot.py:90
+msgid ":x: Please enter your current level correctly"
+msgstr ":x: Please enter your current level correctly"
+
+#: .\bot.py:95
+msgid ":x: Your entered level is not between 1 and 55"
+msgstr ":x: Your entered level is not between 1 and 55"
+
+#: .\bot.py:102
+msgid ":x: Please enter your current XP correctly"
+msgstr ":x: Please enter your current XP correctly"
+
+#: .\bot.py:107
+msgid ":x: Your entered XP is not between 0 and 38,000"
+msgstr ":x: Your entered XP is not between 0 and 38,000"
+
+#: .\bot.py:114
+msgid ":x: Please enter your wanted level correctly"
+msgstr ":x: Please enter your wanted level correctly"
+
+#: .\bot.py:119
+msgid ":x: Your entered wanted level is not between 1 and 55"
+msgstr ":x: Your entered wanted level is not between 1 and 55"
+
+#: .\bot.py:124
+msgid "Average daily XP needed"
+msgstr "Average daily XP needed"
+
+#: .\bot.py:124
+msgid "Average weekly XP needed"
+msgstr "Average weekly XP needed"
+
+#: .\bot.py:124
+msgid "Needed Normal/Ranked Games"
+msgstr "Needed Normal/Ranked Games"
+
+#: .\bot.py:124
+msgid "Needed Spikerushes"
+msgstr "Needed Spikerushes"
+
+#: .\bot.py:124
+msgid "Needed XP for level"
+msgstr "Needed XP for level"
+
+#: .\bot.py:124
+msgid "Needed XP for level up"
+msgstr "Needed XP for level up"
+
+#: .\bot.py:124
+msgid "Total XP"
+msgstr "Total XP"
+
+#: .\bot.py:133
+msgid "Battlepass Calculator"
+msgstr "Battlepass Calculator"
+
+#: .\bot.py:136
+msgid "With completed weeklies"
+msgstr "With completed weeklies"
+
+#: .\bot.py:143
+msgid "Bot is ready"
+msgstr "Bot is ready"
