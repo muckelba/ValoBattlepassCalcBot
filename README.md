@@ -26,7 +26,7 @@ The usage is pretty straight forward:
 
 ![image](https://user-images.githubusercontent.com/34460584/128231983-ab3dd4ea-dd2c-4e92-8c0c-dfc1b5fb737a.png)
 
-The first argument is your current level, the second one is your current XP within that level, the third argument is your level goal (ususally thats 50 or 55), the fourth one is optional and calculates without the weekly XP. Just write any character, it just have to be there.
+The first argument is your current level, the second one is your current XP within that level, the third argument is your level goal (ususally thats 50 or 55), the fourth one is optional and calculates without the weekly XP. Just write any character, it just has to be there.
 
 ## Data
 
