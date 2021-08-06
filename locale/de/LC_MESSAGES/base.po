@@ -43,6 +43,10 @@ msgstr ":x: Bitte gib deine Ziellevel richtig an"
 msgid ":x: Your entered wanted level is not between 1 and 55"
 msgstr ":x: Dein angegebenes Ziellevel ist nicht zwischen 1 und 55"
 
+#: .\bot.py:125
+msgid " + Weekly XP"
+msgstr "+ Weekly XP"
+
 #: .\bot.py:124
 msgid "Average daily XP needed"
 msgstr "Durchschnittlich benötigte XP pro Tag"

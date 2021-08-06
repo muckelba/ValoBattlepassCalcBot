@@ -79,7 +79,7 @@ async def calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies):
     normalneeded = totalxpneeded / average_unrated_xp
     dailyxpneeded = totalxpneeded / season_left.days
     weeklyxpneeded = totalxpneeded / season_weeks_left
-    return totalxp, xpneeded, totalxpneeded, max(0, math.ceil(spikerushneeded)), max(0, math.ceil(normalneeded)), max( 0, math.ceil(dailyxpneeded)), max(0, math.ceil(weeklyxpneeded))
+    return totalxp, xpneeded, max(0, totalxpneeded), max(0, math.ceil(spikerushneeded)), max(0, math.ceil(normalneeded)), max( 0, math.ceil(dailyxpneeded)), max(0, math.ceil(weeklyxpneeded))
 
 @client.command()
 async def battlepass(ctx, currentlevel=None, currentxp=None, maxlevel=None, withoutweeklies=None):
@@ -121,10 +121,14 @@ async def battlepass(ctx, currentlevel=None, currentxp=None, maxlevel=None, with
         return
 
     result = await calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies)
+    if not withoutweeklies:
+        note = _(" + Weekly XP")
+    else:
+        note = ""
     text = f"""
     {_("Total XP")}: `{'{:,}'.format(result[0])}`
     {_("Needed XP for level up")}: `{'{:,}'.format(result[1])}`
-    {_("Needed XP for level")} {maxlevel}: `{'{:,}'.format(result[2])}`
+    {_("Needed XP for level")} {maxlevel}: `{'{:,}'.format(result[2])}` {note}
     {_("Needed Spikerushes")}: `{result[3]}`
     {_("Needed Normal/Ranked Games")}: `{result[4]}`
     {_("Average daily XP needed")}: `{'{:,}'.format(result[5])}`
