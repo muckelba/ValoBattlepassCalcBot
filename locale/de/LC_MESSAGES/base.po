@@ -76,8 +76,8 @@ msgid "Battlepass Calculator"
 msgstr "Battlepass Rechner"
 
 #: .\bot.py:135
-msgid "With completed weeklies"
-msgstr "Mit abgeschlossenen Weeklies"
+msgid "With future completed weeklies"
+msgstr "Mit zukünftig abgeschlossenen Weeklies"
 
 #: .\bot.py:142
 msgid "Bot is ready"

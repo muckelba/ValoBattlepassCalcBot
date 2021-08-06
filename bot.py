@@ -66,18 +66,18 @@ async def calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies):
     totalxp = calculate_total_xp(int(currentlevel), int(currentxp))
     xpneeded = calculate_total_xp(int(currentlevel)+1, 0) - totalxp
     totalxpneeded = 0
-    for i in range(1, int(maxlevel)):
+    for i in range(1, int(maxlevel)+1):
         totalxpneeded += calculate_level_xp(i)
 
     weeklyxp = 0
     if not withoutweeklies:
-        for i in range(1, (total_weeks - math.floor(season_weeks_left)) + 1):
+        for i in range((total_weeks - math.floor(season_weeks_left)), total_weeks + 1):
             weeklyxp += weeklies[i]
-    
+
     totalxpneeded = totalxpneeded - (totalxp + weeklyxp)
     spikerushneeded = totalxpneeded / spike_rush_xp
     normalneeded = totalxpneeded / average_unrated_xp
-    dailyxpneeded = totalxpneeded / season_left.days 
+    dailyxpneeded = totalxpneeded / season_left.days
     weeklyxpneeded = totalxpneeded / season_weeks_left
     return totalxp, xpneeded, totalxpneeded, max(0, math.ceil(spikerushneeded)), max(0, math.ceil(normalneeded)), max( 0, math.ceil(dailyxpneeded)), max(0, math.ceil(weeklyxpneeded))
 
@@ -133,7 +133,7 @@ async def battlepass(ctx, currentlevel=None, currentxp=None, maxlevel=None, with
     embed = discord.Embed(title=_("Battlepass Calculator"), description=text, color=16401492)
     embed.set_thumbnail(url="https://esport.uni-bayreuth.de/wp-content/uploads/2020/11/logo_valorant-150x150.png")
     if not withoutweeklies:
-        embed.set_footer(icon_url="https://i.imgur.com/wbghHOx.png", text=_("With completed weeklies"))
+        embed.set_footer(icon_url="https://i.imgur.com/wbghHOx.png", text=_("With future completed weeklies"))
     await ctx.send(embed=embed)
 
 # Boot confirmation
