@@ -16,8 +16,8 @@ msgstr ""
 
 
 #: .\bot.py:86
-msgid "Usage: `?battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`"
-msgstr "Usage: `?battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`"
+msgid "Usage: `!battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`"
+msgstr "Usage: `!battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`"
 
 #: .\bot.py:90
 msgid ":x: Please enter your current level correctly"

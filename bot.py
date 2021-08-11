@@ -83,7 +83,7 @@ async def calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies):
 
 @client.command()
 async def battlepass(ctx, currentlevel=None, currentxp=None, maxlevel=None, withoutweeklies=None):
-    usage = _("Usage: `?battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`")
+    usage = _("Usage: `!battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`")
     try: 
         isinrange = 1 <= int(currentlevel) <= 55
     except:

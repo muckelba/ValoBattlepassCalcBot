@@ -2,3 +2,4 @@
 config.ini
 msgfmt.py
 pygettext.py
+docker-compose.yml
