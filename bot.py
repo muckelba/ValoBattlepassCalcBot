@@ -46,19 +46,8 @@ def calculate_total_xp(current_level, current_xp):
 async def calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies):
     average_unrated_xp = 4200
     spike_rush_xp = 1000
-    total_weeks = 9
-    weeklies = {
-        1: 15600,
-        2: 19500,
-        3: 32400,
-        4: 32400,
-        5: 40380,
-        6: 40380,
-        7: 46380,
-        8: 46380,
-        9: 49080
-    }
-    season_end = date(2021, 8, 23)
+    total_weeks = int(max(data['weeklies']))
+    season_end = datetime.strptime(data['season_end'], '%d.%m.%Y').date()
     season_now = datetime.now().date()
     season_left = season_end - season_now
     season_weeks_left = season_left.days / 7
@@ -72,7 +61,7 @@ async def calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies):
     weeklyxp = 0
     if not withoutweeklies:
         for i in range((total_weeks - math.floor(season_weeks_left)), total_weeks + 1):
-            weeklyxp += weeklies[i]
+            weeklyxp += data['weeklies'][str(i)]
 
     totalxpneeded = totalxpneeded - (totalxp + weeklyxp)
     spikerushneeded = totalxpneeded / spike_rush_xp
