@@ -81,31 +81,31 @@ async def battlepass(ctx, currentlevel=None, currentxp=None, maxlevel=None, with
         return
 
     if not currentlevel or not isinrange:
-        await ctx.send_(_(":x: Your entered level is not between 1 and 55"))
+        await ctx.send(_(":x: Your entered level is not between 1 and 55"))
         await ctx.send(usage)
         return
 
     try: 
         isinrange = 0 <= int(currentxp) <= 38000
     except:
-        await ctx.send_(_(":x: Please enter your current XP correctly"))
+        await ctx.send(_(":x: Please enter your current XP correctly"))
         await ctx.send(usage)
         return
 
     if not currentxp or not isinrange:
-        await ctx.send_(_(":x: Your entered XP is not between 0 and 38,000"))
+        await ctx.send(_(":x: Your entered XP is not between 0 and 38,000"))
         await ctx.send(usage)
         return
 
     try: 
         isinrange = 1 <= int(maxlevel) <= 55
     except:
-        await ctx.send_(_(":x: Please enter your wanted level correctly"))
+        await ctx.send(_(":x: Please enter your wanted level correctly"))
         await ctx.send(usage)
         return
 
     if not maxlevel or not isinrange:
-        await ctx.send_(_(":x: Your entered wanted level is not between 1 and 55"))
+        await ctx.send(_(":x: Your entered wanted level is not between 1 and 55"))
         await ctx.send(usage)
         return
 
