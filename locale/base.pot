@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-06 13:02+0200\n"
+"POT-Creation-Date: 2021-08-13 12:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,75 +15,79 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: .\bot.py:86
+#: .\bot.py:75
+msgid "Command issued"
+msgstr ""
+
+#: .\bot.py:77
 msgid "Usage: `!battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`"
 msgstr ""
 
-#: .\bot.py:90
+#: .\bot.py:81
 msgid ":x: Please enter your current level correctly"
 msgstr ""
 
-#: .\bot.py:95
+#: .\bot.py:86
 msgid ":x: Your entered level is not between 1 and 55"
 msgstr ""
 
-#: .\bot.py:102
+#: .\bot.py:93
 msgid ":x: Please enter your current XP correctly"
 msgstr ""
 
-#: .\bot.py:107
+#: .\bot.py:98
 msgid ":x: Your entered XP is not between 0 and 38,000"
 msgstr ""
 
-#: .\bot.py:114
+#: .\bot.py:105
 msgid ":x: Please enter your wanted level correctly"
 msgstr ""
 
-#: .\bot.py:119
+#: .\bot.py:110
 msgid ":x: Your entered wanted level is not between 1 and 55"
 msgstr ""
 
-#: .\bot.py:125
+#: .\bot.py:116
 msgid " + Weekly XP"
 msgstr ""
 
-#: .\bot.py:128
+#: .\bot.py:119
 msgid "Average daily XP needed"
 msgstr ""
 
-#: .\bot.py:128
+#: .\bot.py:119
 msgid "Average weekly XP needed"
 msgstr ""
 
-#: .\bot.py:128
+#: .\bot.py:119
 msgid "Needed Normal/Ranked Games"
 msgstr ""
 
-#: .\bot.py:128
+#: .\bot.py:119
 msgid "Needed Spikerushes"
 msgstr ""
 
-#: .\bot.py:128
+#: .\bot.py:119
 msgid "Needed XP for level"
 msgstr ""
 
-#: .\bot.py:128
+#: .\bot.py:119
 msgid "Needed XP for level up"
 msgstr ""
 
-#: .\bot.py:128
+#: .\bot.py:119
 msgid "Total XP"
 msgstr ""
 
-#: .\bot.py:137
+#: .\bot.py:128
 msgid "Battlepass Calculator"
 msgstr ""
 
-#: .\bot.py:140
+#: .\bot.py:131
 msgid "With future completed weeklies"
 msgstr ""
 
-#: .\bot.py:147
+#: .\bot.py:138
 msgid "Bot is ready"
 msgstr ""
 

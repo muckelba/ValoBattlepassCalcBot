@@ -14,6 +14,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
+#: .\bot.py:75
+msgid "Command issued"
+msgstr "Befehl benutzt"
 
 #: .\bot.py:86
 msgid "Usage: `!battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`"

@@ -72,6 +72,8 @@ async def calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies):
 
 @client.command()
 async def battlepass(ctx, currentlevel=None, currentxp=None, maxlevel=None, withoutweeklies=None):
+    logging.info(f"{_('Command issued')}: {ctx.message.content}")
+
     usage = _("Usage: `!battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`")
     try: 
         isinrange = 1 <= int(currentlevel) <= 55
