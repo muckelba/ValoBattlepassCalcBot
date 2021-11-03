@@ -30,7 +30,7 @@ client = commands.Bot(command_prefix = "!")
 
 def calculate_level_xp(level):
     if 2 <= level <= 50:
-        return 2000 + (level - 2) * 750
+        return 2000 + (level - 2) * data["level_multiplier"]
     elif 51 <= level <= 55:
         return 36500
     else:
@@ -44,8 +44,6 @@ def calculate_total_xp(current_level, current_xp):
     return result
 
 async def calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies):
-    average_unrated_xp = 4200
-    spike_rush_xp = 1000
     total_weeks = max(map(int, data['weeklies']))
     season_end = datetime.strptime(data['season_end'], '%d.%m.%Y').date()
     season_now = datetime.now().date()
@@ -64,8 +62,8 @@ async def calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies):
             weeklyxp += data['weeklies'][str(i)]
 
     totalxpneeded = totalxpneeded - (totalxp + weeklyxp)
-    spikerushneeded = totalxpneeded / spike_rush_xp
-    normalneeded = totalxpneeded / average_unrated_xp
+    spikerushneeded = totalxpneeded / data["spike_rush_xp"]
+    normalneeded = totalxpneeded / data["average_unrated_xp"]
     dailyxpneeded = totalxpneeded / season_left.days
     weeklyxpneeded = totalxpneeded / season_weeks_left
     return totalxp, xpneeded, max(0, totalxpneeded), max(0, math.ceil(spikerushneeded)), max(0, math.ceil(normalneeded)), max( 0, math.ceil(dailyxpneeded)), max(0, math.ceil(weeklyxpneeded))
