@@ -46,7 +46,7 @@ def calculate_total_xp(current_level, current_xp):
 async def calc_battlepass(currentlevel, currentxp, maxlevel, withoutweeklies):
     average_unrated_xp = 4200
     spike_rush_xp = 1000
-    total_weeks = int(max(data['weeklies']))
+    total_weeks = max(map(int, data['weeklies']))
     season_end = datetime.strptime(data['season_end'], '%d.%m.%Y').date()
     season_now = datetime.now().date()
     season_left = season_end - season_now
@@ -75,7 +75,7 @@ async def battlepass(ctx, currentlevel=None, currentxp=None, maxlevel=None, with
     logging.info(f"{_('Command issued')}: {ctx.message.content}")
 
     usage = _("Usage: `!battlepass [Current level] [Current XP] [Wanted level] [Without weeklies]`")
-    try: 
+    try:
         isinrange = 1 <= int(currentlevel) <= 55
     except:
         await ctx.send(_(":x: Please enter your current level correctly"))
@@ -87,7 +87,7 @@ async def battlepass(ctx, currentlevel=None, currentxp=None, maxlevel=None, with
         await ctx.send(usage)
         return
 
-    try: 
+    try:
         isinrange = 0 <= int(currentxp) <= 38000
     except:
         await ctx.send(_(":x: Please enter your current XP correctly"))
@@ -99,7 +99,7 @@ async def battlepass(ctx, currentlevel=None, currentxp=None, maxlevel=None, with
         await ctx.send(usage)
         return
 
-    try: 
+    try:
         isinrange = 1 <= int(maxlevel) <= 55
     except:
         await ctx.send(_(":x: Please enter your wanted level correctly"))
