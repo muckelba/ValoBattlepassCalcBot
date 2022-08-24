@@ -25,7 +25,9 @@ translation = gettext.translation('base', './locale', fallback=True, languages=[
 translation.install()
 _ = translation.gettext
 
-client = commands.Bot(command_prefix = "!")
+intents = discord.Intents.default()
+intents.message_content = True
+client = commands.Bot(command_prefix = "!", intents=intents)
 
 
 def calculate_level_xp(level):
