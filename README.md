@@ -35,7 +35,7 @@ The first argument is your current level, the second one is your current XP with
 
 ## Data
 
-Battlepass XP values are taken from [this tweet](https://twitter.com/shiick/status/1562095421031432192) and might need to adjusted each season. If i dont do it, just update the `data.json` file.
+Battlepass XP values are taken from [this tweet](https://twitter.com/Shiick/status/1612867216591970304) and might need to adjusted each season. If i dont do it, just update the `data.json` file.
 
 
 ## Credit
